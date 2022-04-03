@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
+$background-color:rgb(20,21,25);
 $orange : rgb(250,124,24);//star and rates color
 $dark-gray : rgb(38,47,56);//star background
 $gray : rgb(31,38,48);//card background
 $white : rgb(255,255,255);//text color
 $light-gray : rgb(134,141,151);//text color
+$gray-light-2 : rgb(124,136,152);
 
 
 body {
     font-family: 'Nunito', sans-serif;
+    background-color: $background-color;
 }
 
 
@@ -18,8 +21,8 @@ body {
     background-color: $gray;
     width:auto;
     box-sizing: border-box;
-    width:23.2rem;
-    height: 23.2 rem;
+    width:22.8rem;
+    height: 22.7 rem;
     padding:2rem  1.5rem 0rem 2rem;
     border-radius: 1.3rem;
     margin-top:20vh;
@@ -28,8 +31,8 @@ body {
         background-color: $dark-gray;
         padding:0.8rem;
         border-radius: 50%;
-        width:1.4rem;
-        height:1.4rem;
+        width:1.2rem;
+        height:1.2rem;
 
         img {
             display: block;
@@ -60,8 +63,20 @@ body {
             text-align: center;
             padding:0.8rem;
             border-radius: 50%;
-            width:1.4rem;
-            height:1.4rem;            
+            width:1.2rem;
+            height:1.2rem;
+            text-decoration:none;
+            
+            &:hover {
+                color:$white;
+                background-color: $gray-light-2;
+                cursor: pointer;
+            }
+        }
+
+        .selected {
+            background-color: $orange;
+            color:$white;
         }
     }
 
@@ -77,7 +92,18 @@ body {
         border-radius: 5rem;
         letter-spacing: .1rem;
         margin:2rem auto;
-
     }
 
+    .active-btn {
+        background-color: $white;
+        color:$orange;
+    }
+
+}
+
+.attribution {
+    position: fixed;
+    bottom:5px;
+    width:100%;
+    color:$light-gray;
 }

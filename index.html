@@ -8,12 +8,14 @@
   
   <link rel="stylesheet" href="./css/main.css" />
 
+  <script src="./js/app.js"></script>
+
   <title>Frontend Mentor | Interactive rating component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 39%, 56%); }
   </style>
 </head>
 <body>
@@ -21,7 +23,7 @@
   <div class="card">
 
   <div class="star">
-    <img alt="star" src="https://img.icons8.com/fluency/48/000000/star.png"/>
+    <img alt="" src="./images/icon-star.svg"/>  
   </div>
 
   <h2 class="title">
@@ -34,14 +36,14 @@
    </p>
 
   <div class="rates">
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span>4</span>
-      <span>5</span>
+    <a class="selected" href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
   </div>
 
-  <button id="submit" class="submit-btn">
+  <button id="submit" class="submit-btn active-btn">
     SUBMIT
   </button>
 

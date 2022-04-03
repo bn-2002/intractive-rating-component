@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 body {
   font-family: 'Nunito', sans-serif;
+  background-color: #141519;
 }
 
 .card {
@@ -9,8 +10,8 @@ body {
   background-color: #1f2630;
   width: auto;
   box-sizing: border-box;
-  width: 23.2rem;
-  height: 23.2 rem;
+  width: 22.8rem;
+  height: 22.7 rem;
   padding: 2rem  1.5rem 0rem 2rem;
   border-radius: 1.3rem;
   margin-top: 20vh;
@@ -20,8 +21,8 @@ body {
   background-color: #262f38;
   padding: 0.8rem;
   border-radius: 50%;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 .card .star img {
@@ -53,8 +54,20 @@ body {
   text-align: center;
   padding: 0.8rem;
   border-radius: 50%;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-decoration: none;
+}
+
+.card .rates > *:hover {
+  color: white;
+  background-color: #7c8898;
+  cursor: pointer;
+}
+
+.card .rates .selected {
+  background-color: #fa7c18;
+  color: white;
 }
 
 .card .submit-btn {
@@ -69,5 +82,17 @@ body {
   border-radius: 5rem;
   letter-spacing: .1rem;
   margin: 2rem auto;
+}
+
+.card .active-btn {
+  background-color: white;
+  color: #fa7c18;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  color: #868d97;
 }
 /*# sourceMappingURL=main.css.map */
