@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1f2630;
+  width: auto;
+  box-sizing: border-box;
+  width: 23.2rem;
+  height: 23.2 rem;
+  padding: 2rem  1.5rem 0rem 2rem;
+  border-radius: 1.3rem;
+  margin-top: 20vh;
+}
+
+.card .star {
+  background-color: #262f38;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.card .star img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.card .title {
+  color: white;
+}
+
+.card .des {
+  color: #868d97;
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+}
+
+.card .rates {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .rates > * {
+  color: #868d97;
+  background-color: #262f38;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.card .submit-btn {
+  font-family: 'Nunito', sans-serif;
+  border-radius: .4rem;
+  color: white;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  background-color: #fa7c18;
+  border: none;
+  outline: none;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  margin: 2rem auto;
+}
+/*# sourceMappingURL=main.css.map */

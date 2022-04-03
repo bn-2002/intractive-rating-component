@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+$orange : rgb(250,124,24);//star and rates color
+$dark-gray : rgb(38,47,56);//star background
+$gray : rgb(31,38,48);//card background
+$white : rgb(255,255,255);//text color
+$light-gray : rgb(134,141,151);//text color
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.card {
+    margin-left:auto;
+    margin-right:auto;
+    background-color: $gray;
+    width:auto;
+    box-sizing: border-box;
+    width:23.2rem;
+    height: 23.2 rem;
+    padding:2rem  1.5rem 0rem 2rem;
+    border-radius: 1.3rem;
+    margin-top:20vh;
+
+    .star {
+        background-color: $dark-gray;
+        padding:0.8rem;
+        border-radius: 50%;
+        width:1.4rem;
+        height:1.4rem;
+
+        img {
+            display: block;
+            margin:0 auto;
+            height:100%;
+            width:100%;
+        }
+    }
+
+    .title {
+        color:$white;
+    }
+
+    .des {
+        color:$light-gray;
+        font-size: 0.85rem;
+        line-height: 1.3rem;
+    }
+
+    .rates {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &>* {
+            color:$light-gray;
+            background-color: $dark-gray;
+            text-align: center;
+            padding:0.8rem;
+            border-radius: 50%;
+            width:1.4rem;
+            height:1.4rem;            
+        }
+    }
+
+    .submit-btn {
+        font-family: 'Nunito', sans-serif;
+        border-radius: .4rem;
+        color:$white;
+        padding:0.6rem 1rem;
+        width:100%;
+        background-color: $orange;
+        border:none;
+        outline:none;
+        border-radius: 5rem;
+        letter-spacing: .1rem;
+        margin:2rem auto;
+
+    }
+
+}
