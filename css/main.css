@@ -142,7 +142,7 @@ body {
     width: 90%;
   }
   html .card .rating-state .rates {
-    width: 100%;
+    width: 5px;
     justify-content: space-between;
     align-items: center;
   }
