@@ -8,7 +8,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #1f2630;
-  width: auto;
   box-sizing: border-box;
   width: 22.8rem;
   height: 22.7 rem;
@@ -139,7 +138,7 @@ body {
 
 @media only screen and (max-width: 25rem) {
   html .card {
-    height: 110%;
+    height: auto;
     width: 90%;
   }
   html .card .rating-state .rates {
@@ -158,7 +157,7 @@ body {
 @media only screen and (max-width: 19.5rem) {
   html .card {
     font-size: 90%;
-    height: 110%;
+    height: auto;
     width: 90%;
   }
   html .card .rating-state .rates {

@@ -1,11 +1,11 @@
 
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
-        @media only screen and (max-width: 25rem) { @content };    //600px
+        @media only screen and (max-width: 25rem) { @content };   
     }
 
     @if $breakpoint == miniphone {
-        @media only screen and (max-width: 19.5rem) { @content };    //600px
+        @media only screen and (max-width: 19.5rem) { @content };   
     }
 
 }
@@ -13,7 +13,8 @@
 html {
     @include respond(phone) {
         .card {
-            height:110%;
+            height:auto;
+            // height:70%;
             width:90%;
 
             .rating-state {
@@ -41,7 +42,7 @@ html {
     @include respond(miniphone) {
         .card {
             font-size: 90%;
-            height:110%;
+            height:auto;
             width:90%;
 
             .rating-state {
