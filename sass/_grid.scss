@@ -18,11 +18,9 @@ html {
 
             .rating-state {
                 .rates {
-                    // width:100%;
-                    width:5px;
+                    width:100%;
                     justify-content:space-between;
                     align-items: center;
-                    // flex-wrap: wrap;
             
                     &>* {
                     padding:.6rem;
