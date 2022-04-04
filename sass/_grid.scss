@@ -14,7 +14,6 @@ html {
     @include respond(phone) {
         .card {
             height:auto;
-            // height:70%;
             width:90%;
 
             .rating-state {
