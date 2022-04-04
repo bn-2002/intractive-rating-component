@@ -17,7 +17,7 @@ body {
   margin-top: 20vh;
 }
 
-.card .star {
+.card .rating-state .star {
   background-color: #262f38;
   padding: 0.8rem;
   border-radius: 50%;
@@ -25,30 +25,30 @@ body {
   height: 1.2rem;
 }
 
-.card .star img {
+.card .rating-state .star img {
   display: block;
   margin: 0 auto;
   height: 100%;
   width: 100%;
 }
 
-.card .title {
+.card .rating-state .title {
   color: white;
 }
 
-.card .des {
+.card .rating-state .des {
   color: #868d97;
   font-size: 0.85rem;
   line-height: 1.3rem;
 }
 
-.card .rates {
+.card .rating-state .rates {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.card .rates > * {
+.card .rating-state .rates > * {
   color: #868d97;
   background-color: #262f38;
   text-align: center;
@@ -59,18 +59,18 @@ body {
   text-decoration: none;
 }
 
-.card .rates > *:hover {
+.card .rating-state .rates > *:hover {
   color: white;
   background-color: #7c8898;
   cursor: pointer;
 }
 
-.card .rates .selected {
+.card .rating-state .rates .selected {
   background-color: #fa7c18;
   color: white;
 }
 
-.card .submit-btn {
+.card .rating-state .submit-btn {
   font-family: 'Nunito', sans-serif;
   border-radius: .4rem;
   color: white;
@@ -82,11 +82,46 @@ body {
   border-radius: 5rem;
   letter-spacing: .1rem;
   margin: 2rem auto;
+  cursor: pointer;
 }
 
-.card .active-btn {
+.card .rating-state .active-btn {
   background-color: white;
   color: #fa7c18;
+}
+
+.card .thank-you-state {
+  display: none;
+}
+
+.card .thank-you-state .thank-you-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.card .thank-you-state .title {
+  color: #fa7c18;
+  background-color: #262f38;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 55%;
+  padding: .3rem;
+  margin: 1.7rem auto;
+  display: block;
+}
+
+.card .thank-you-state .thank-you {
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.card .thank-you-state .des {
+  color: #868d97;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 0rem 0rem 2.4rem 0rem;
 }
 
 .attribution {
@@ -94,5 +129,50 @@ body {
   bottom: 5px;
   width: 100%;
   color: #868d97;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #6375bb;
+}
+
+@media only screen and (max-width: 25rem) {
+  html .card {
+    height: 110%;
+    width: 90%;
+  }
+  html .card .rating-state .rates {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  html .card .rating-state .rates > * {
+    padding: .6rem;
+  }
+  html .card .thank-you-state .title {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 19.5rem) {
+  html .card {
+    font-size: 90%;
+    height: 110%;
+    width: 90%;
+  }
+  html .card .rating-state .rates {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  html .card .rating-state .rates > * {
+    padding: 0.4rem;
+  }
+  html .card .thank-you-state .title {
+    width: 90%;
+    padding: 0.2rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

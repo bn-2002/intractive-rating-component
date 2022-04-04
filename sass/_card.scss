@@ -7,6 +7,7 @@ $gray : rgb(31,38,48);//card background
 $white : rgb(255,255,255);//text color
 $light-gray : rgb(134,141,151);//text color
 $gray-light-2 : rgb(124,136,152);
+$blue : hsl(228, 39%, 56%);
 
 
 body {
@@ -27,78 +28,114 @@ body {
     border-radius: 1.3rem;
     margin-top:20vh;
 
-    .star {
-        background-color: $dark-gray;
-        padding:0.8rem;
-        border-radius: 50%;
-        width:1.2rem;
-        height:1.2rem;
-
-        img {
-            display: block;
-            margin:0 auto;
-            height:100%;
-            width:100%;
-        }
-    }
-
-    .title {
-        color:$white;
-    }
-
-    .des {
-        color:$light-gray;
-        font-size: 0.85rem;
-        line-height: 1.3rem;
-    }
-
-    .rates {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &>* {
-            color:$light-gray;
+    .rating-state {
+        .star {
             background-color: $dark-gray;
-            text-align: center;
             padding:0.8rem;
             border-radius: 50%;
             width:1.2rem;
             height:1.2rem;
-            text-decoration:none;
-            
-            &:hover {
-                color:$white;
-                background-color: $gray-light-2;
-                cursor: pointer;
+    
+            img {
+                display: block;
+                margin:0 auto;
+                height:100%;
+                width:100%;
             }
         }
-
-        .selected {
-            background-color: $orange;
+    
+        .title {
             color:$white;
+        }
+    
+        .des {
+            color:$light-gray;
+            font-size: 0.85rem;
+            line-height: 1.3rem;
+        }
+    
+        .rates {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    
+            &>* {
+                color:$light-gray;
+                background-color: $dark-gray;
+                text-align: center;
+                padding:0.8rem;
+                border-radius: 50%;
+                width:1.2rem;
+                height:1.2rem;
+                text-decoration:none;
+                
+                &:hover {
+                    color:$white;
+                    background-color: $gray-light-2;
+                    cursor: pointer;
+                }
+            }
+    
+            .selected {
+                background-color: $orange;
+                color:$white;
+            }
+        }
+    
+        .submit-btn {
+            font-family: 'Nunito', sans-serif;
+            border-radius: .4rem;
+            color:$white;
+            padding:0.6rem 1rem;
+            width:100%;
+            background-color: $orange;
+            border:none;
+            outline:none;
+            border-radius: 5rem;
+            letter-spacing: .1rem;
+            margin:2rem auto;
+            cursor: pointer;
+        }
+    
+        .active-btn {
+            background-color: $white;
+            color:$orange;
         }
     }
 
-    .submit-btn {
-        font-family: 'Nunito', sans-serif;
-        border-radius: .4rem;
-        color:$white;
-        padding:0.6rem 1rem;
-        width:100%;
-        background-color: $orange;
-        border:none;
-        outline:none;
-        border-radius: 5rem;
-        letter-spacing: .1rem;
-        margin:2rem auto;
-    }
+    .thank-you-state {
+        display: none;
+        .thank-you-img {
+            display: block;
+            margin: 0 auto;
+        }
 
-    .active-btn {
-        background-color: $white;
-        color:$orange;
-    }
+        .title {
+            color:$orange;
+            background-color: $dark-gray;
+            border-radius: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            width:55%;
+            padding:.3rem;
+            margin:1.7rem auto;
+            display: block;
 
+        }
+
+        .thank-you {
+            color:$white;
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+        .des {
+            color:$light-gray;
+            text-align: center;
+            font-size: 0.85rem;
+            padding: 0rem 0rem 2.4rem 0rem;
+        }
+    }
 }
 
 .attribution {
@@ -106,4 +143,9 @@ body {
     bottom:5px;
     width:100%;
     color:$light-gray;
+    font-size: 11px;
+    text-align: center;
+    a {
+        color:$blue;
+    }
 }

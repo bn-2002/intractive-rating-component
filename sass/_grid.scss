@@ -1,0 +1,68 @@
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 25rem) { @content };    //600px
+    }
+
+    @if $breakpoint == miniphone {
+        @media only screen and (max-width: 19.5rem) { @content };    //600px
+    }
+
+}
+
+html {
+    @include respond(phone) {
+        .card {
+            height:110%;
+            width:90%;
+
+            .rating-state {
+                .rates {
+                    width:100%;
+                    justify-content:space-between;
+                    align-items: center;
+                    // flex-wrap: wrap;
+            
+                    &>* {
+                    padding:.6rem;
+                    }
+        
+            }    
+            }
+
+            .thank-you-state {
+                .title {
+                    width:90%;
+                }
+            }
+    }
+    }
+
+    @include respond(miniphone) {
+        .card {
+            font-size: 90%;
+            height:110%;
+            width:90%;
+
+            .rating-state {
+                .rates {
+                    width:100%;
+                    justify-content:space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+            
+                    &>* {
+                        padding:0.4rem;
+                    }
+            }    
+            }
+
+            .thank-you-state {
+                .title {
+                    width:90%;
+                    padding:0.2rem;
+                }
+            }
+    }
+    }
+}

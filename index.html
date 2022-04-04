@@ -1,73 +1,55 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script defer src="./js/app.js"></script>
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="rating-state">
+            <div class="star">
+              <img alt="" src="./images/icon-star.svg" />
+            </div>
+      
+            <h2 class="title">How did we do?</h2>
+      
+            <p class="des">
+              Please let us know how we did with your support request. All feedback is
+              appreciated to help us improve our offering!
+            </p>
+      
+            <div class="rates">
+              <a class="rate" href="#">1</a>
+              <a class="rate" href="#">2</a>
+              <a class="rate" href="#">3</a>
+              <a class="rate" href="#">4</a>
+              <a class="rate" href="#">5</a>
+            </div>
+      
+            <button id="submit" class="submit-btn">SUBMIT</button>
+        </div>
+        <div class="thank-you-state">
+           <img class="thank-you-img" alt="" src="./images/illustration-thank-you.svg">
+           <p class="title">
+            You selected <span class="user-rate"></span> out of 5
+           </p> 
+           <p class="thank-you"> Thank you!</p>
+           <p class="des">
+            We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch! 
+           </p>
+        </div>
+    </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <link rel="stylesheet" href="./css/main.css" />
-
-  <script src="./js/app.js"></script>
-
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 39%, 56%); }
-  </style>
-</head>
-<body>
-
-  <div class="card">
-
-  <div class="star">
-    <img alt="" src="./images/icon-star.svg"/>  
-  </div>
-
-  <h2 class="title">
-    How did we do?
-  </h2>
-
-   <p class="des">
-    Please let us know how we did with your support request. All feedback is appreciated 
-    to help us improve our offering!   
-   </p>
-
-  <div class="rates">
-    <a class="selected" href="#">1</a>
-    <a href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">5</a>
-  </div>
-
-  <button id="submit" class="submit-btn active-btn">
-    SUBMIT
-  </button>
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected Add rating here out of 5 -->
-
-  <!-- Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
-
-  </div>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/bn-2002">bahareni1</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">bahareni1</a>.
+    </div>
+  </body>
 </html>
-
