@@ -2,9 +2,6 @@
 
 https://intractive-rating-component.netlify.app/
 
-![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
-
-
-
+![Uploading screencapture-intractive-rating-component-netlify-app-2022-04-04-16_21_53.png…]()
 
 
